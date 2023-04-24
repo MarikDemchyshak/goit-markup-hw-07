@@ -37,6 +37,9 @@ ol {
 
 img {
   display: block;
+  max-width: 100%;
+  height: auto;
+  width: 100%;
 }
 
 button {
@@ -76,7 +79,8 @@ body {
 }
 
 .container {
-  width: 1158px;
+  /* width: 1158px; */
+  width: 100%;
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
@@ -183,7 +187,7 @@ body {
 }
 
 /* ----------SECTION HERO---------- */
-.hero {
+/* .hero {
   background-color: var(--logo-studio);
   background-image: var(--hero-gradient), url(../images/hero/hero.jpg);
   background-repeat: no-repeat;
@@ -193,7 +197,7 @@ body {
   max-width: 1440px;
   height: 600px;
   margin: 0 auto;
-}
+} */
 
 .hero-buttom {
   text-align: center;
@@ -237,15 +241,22 @@ body {
 
 /* ----------SECTION TWO---------- */
 .section-two-margin {
-  padding: 120px 0;
+  /* padding: 120px 0; */
+  padding: 96px 0;
 }
 
 .flex-two {
   display: flex;
-  gap: 24px;
+  flex-wrap: wrap;
+  /* gap: 24px; */
+  gap: 72px;
 }
 
-.section-two-icon {
+.section-two-list {
+  /* flex-basis: calc((100% - 72px) / 4); */
+}
+
+/* .section-two-icon {
   height: 112px;
   border-radius: 4px;
   background-color: var(--button-footer-text);
@@ -253,9 +264,9 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-}
+} */
 
-.clock {
+/* .clock {
   width: 264px;
   height: 112px;
   border-radius: 4px;
@@ -264,9 +275,9 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   margin-bottom: 8px;
-}
+} */
 
-.diagram {
+/* .diagram {
   width: 264px;
   height: 112px;
   border-radius: 4px;
@@ -275,9 +286,9 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   margin-bottom: 8px;
-}
+} */
 
-.astronaut {
+/* .astronaut {
   width: 264px;
   height: 112px;
   border-radius: 4px;
@@ -286,20 +297,24 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   margin-bottom: 8px;
-}
+} */
 
 .section-two-title {
-  font-weight: 500;
-  font-size: 20px;
+  /* font-weight: 500; */
+  font-weight: 700;
+  /* font-size: 20px; */
+  font-size: 36px;
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: var(--logo-studio);
-  width: 264px;
+  width: 100%;
   margin-bottom: 8px;
+  text-align: center;
 }
 
 .section-two-text {
-  font-weight: 400;
+  /* font-weight: 400; */
+  font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
@@ -329,6 +344,7 @@ body {
 .section-four-background {
   background-color: var(--button-footer-text);
   padding: 120px 0;
+  /* padding: 96px 0; */
 }
 
 .section-four-title {
@@ -343,7 +359,9 @@ body {
 
 .flex-four {
   display: flex;
-  gap: 24px;
+  flex-wrap: wrap;
+  /* gap: 24px; */
+  gap: 72px;
 }
 
 .img-background {
@@ -351,6 +369,7 @@ body {
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
   border-radius: 0px 0px 4px 4px;
+  flex-basis: calc((100% - 72px) / 4);
 }
 
 .saction-four-name-profession {
@@ -906,4 +925,10 @@ body {
 .modal-form-submit:focus {
   background: var(--header-contact-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+
+@media screen and (min-width: 428px) {
+  .container {
+    width: 428px;
+  }
 }
