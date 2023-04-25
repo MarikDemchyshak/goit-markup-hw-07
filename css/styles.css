@@ -343,8 +343,8 @@ body {
 /* ----------SECTION FOUR---------- */
 .section-four-background {
   background-color: var(--button-footer-text);
-  padding: 120px 0;
-  /* padding: 96px 0; */
+  /* padding: 120px 0; */
+  padding: 96px 0;
 }
 
 .section-four-title {
@@ -362,6 +362,7 @@ body {
   flex-wrap: wrap;
   /* gap: 24px; */
   gap: 72px;
+  justify-content: center;
 }
 
 .img-background {
@@ -369,7 +370,7 @@ body {
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
   border-radius: 0px 0px 4px 4px;
-  flex-basis: calc((100% - 72px) / 4);
+  /* flex-basis: calc((100% - 72px) / 4); */
 }
 
 .saction-four-name-profession {
@@ -387,6 +388,7 @@ body {
 }
 
 .section-four-profession {
+  font-weight: 400;
   line-height: 1.5;
   letter-spacing: 0.02em;
   margin-bottom: 8px;
@@ -425,8 +427,8 @@ body {
 
 /* ----------SECTION FIVE---------- */
 .section-five-customers {
-  padding-top: 123px;
-  padding-bottom: 120px;
+  /* padding: 120px 0; */
+  padding: 96px 0;
 }
 
 .section-five-title {
@@ -442,11 +444,20 @@ body {
 
 .section-five-list {
   display: flex;
-  gap: 24px;
+  flex-wrap: wrap;
+  /* gap: 24px; */
+  justify-content: center;
+  row-gap: 72px;
+  column-gap: 16px;
+}
+
+.section-five-item {
+  /* flex-basis: calc((100% - 16px) / 2); */
 }
 
 .section-five-link-icon {
-  width: 168px;
+  /* width: 168px; */
+  width: 190px;
   height: 88px;
   border: 1px solid currentColor;
   color: var(--color-icon);
@@ -578,15 +589,19 @@ body {
 /* ----------FOOTER---------- */
 .footer-background {
   background-color: var(--logo-studio);
-  padding: 100px 0;
+  /* padding: 100px 0; */
+  padding: 96px 0;
 }
 
 .footer-container {
   display: flex;
+  flex-wrap: wrap;
+  gap: 72px;
+  justify-content: center;
 }
 
 .footer-logo-text {
-  margin-right: 120px;
+  /* margin-right: 120px; */
 }
 
 .footer-logo-web {
@@ -597,6 +612,8 @@ body {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--logo-web);
+  display: block;
+  text-align: center;
 }
 
 .footer-logo-studio {
@@ -624,6 +641,8 @@ body {
   letter-spacing: 0.02em;
   color: var(--brand-color-btn-1);
   margin-bottom: 16px;
+  display: block;
+  text-align: center;
 }
 
 .footer-social-links {
@@ -654,7 +673,7 @@ body {
 
 /* --------FORM FOOTER-------- */
 .container-form-footer {
-  margin-left: 80px;
+  /* margin-left: 80px; */
 }
 
 .form-text {
@@ -665,15 +684,21 @@ body {
   color: var(--brand-color-btn-1);
   display: block;
   margin-bottom: 16px;
+  display: block;
+  text-align: center;
 }
 
 .form-label-btn {
   display: flex;
-  gap: 24px;
+  flex-wrap: wrap;
+  /* gap: 24px; */
+  gap: 16px;
+  justify-content: center;
 }
 
 .footer-input {
-  width: 264px;
+  /* width: 264px; */
+  width: 398px;
   height: 40px;
   background-color: transparent;
   border: 1px solid var(--brand-color-btn-1);
@@ -961,11 +986,44 @@ body {
     margin-bottom: 8px;
     text-align: left;
   }
+
+  .flex-four {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    row-gap: 64px;
+    column-gap: 24px;
+  }
+
+  .section-five-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    row-gap: 72px;
+    column-gap: 24px;
+  }
+
+  .section-five-link-icon {
+    width: 168px;
+    /* width: 190px; */
+    height: 88px;
+    border: 1px solid currentColor;
+    color: var(--color-icon);
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: border-color var(--transition-dur-and-timing),
+      color var(--transition-dur-and-timing);
+  }
 }
 
 @media screen and (min-width: 1158px) {
   .container {
     width: 1158px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
   }
 
   .section-two-margin {
@@ -1011,5 +1069,32 @@ body {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
+  }
+
+  .flex-four {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+  }
+
+  .img-background {
+    background-color: var(--brand-color-btn-1);
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+      0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+    border-radius: 0px 0px 4px 4px;
+    flex-basis: calc((100% - 72px) / 4);
+  }
+
+  .section-five-customers {
+    padding: 120px 0;
+  }
+
+  .section-five-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    justify-content: center;
+    /* row-gap: 72px;
+  column-gap: 16px; */
   }
 }
