@@ -187,7 +187,7 @@ body {
 }
 
 /* ----------SECTION HERO---------- */
-/* .hero {
+.hero {
   background-color: var(--logo-studio);
   background-image: var(--hero-gradient), url(../images/hero/hero.jpg);
   background-repeat: no-repeat;
@@ -197,7 +197,7 @@ body {
   max-width: 1440px;
   height: 600px;
   margin: 0 auto;
-} */
+}
 
 .hero-buttom {
   text-align: center;
@@ -628,9 +628,13 @@ body {
 
 .footer-text {
   color: var(--button-footer-text);
-  max-width: 264px;
+  /* max-width: 264px; */
+  max-width: 268px;
   line-height: 1.5em;
   margin-top: 16px;
+}
+
+.footer-social-icon {
 }
 
 .footer-title-social-media {
@@ -1016,6 +1020,69 @@ body {
     transition: border-color var(--transition-dur-and-timing),
       color var(--transition-dur-and-timing);
   }
+
+  .footer-logo-web {
+    font-family: "Raleway", sans-serif;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--logo-web);
+    display: block;
+    text-align: left;
+  }
+
+  .footer-title-social-media {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--brand-color-btn-1);
+    margin-bottom: 16px;
+    display: block;
+    text-align: left;
+  }
+
+  .form-text {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--brand-color-btn-1);
+    display: block;
+    margin-bottom: 16px;
+    display: block;
+    text-align: left;
+  }
+
+  .footer-input {
+    width: 264px;
+    /* width: 398px; */
+    height: 40px;
+    background-color: transparent;
+    border: 1px solid var(--brand-color-btn-1);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    padding-left: 16px;
+    color: var(--brand-color-btn-1);
+  }
+
+  .footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 72px;
+    column-gap: 24px;
+    justify-content: center;
+  }
+
+  .form-label-btn {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    justify-content: center;
+  }
 }
 
 @media screen and (min-width: 1158px) {
@@ -1094,7 +1161,22 @@ body {
     flex-wrap: wrap;
     gap: 24px;
     justify-content: center;
-    /* row-gap: 72px;
-  column-gap: 16px; */
+  }
+
+  .footer-background {
+    background-color: var(--logo-studio);
+    padding: 100px 0;
+  }
+
+  .footer-container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .footer-text {
+    color: var(--button-footer-text);
+    max-width: 264px;
+    line-height: 1.5em;
+    margin-top: 16px;
   }
 }
