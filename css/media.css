@@ -12,6 +12,133 @@
     width: 768px;
   }
 
+  /* --------HEADER-------- */
+  .header-border {
+    border-bottom: 1px solid var(--list-card-set);
+  }
+
+  .header-container {
+    display: flex;
+    align-items: center;
+  }
+
+  .header-navigation {
+    display: flex;
+    margin-right: auto;
+    align-items: center;
+  }
+
+  .header-logo-web {
+    font-family: "Raleway", sans-serif;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--logo-web);
+    padding-top: 24px;
+    padding-bottom: 24px;
+    /* margin-right: 76px; */
+    margin-right: 120px;
+  }
+
+  .header-logo-studio {
+    font-family: "Raleway", sans-serif;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--logo-studio);
+  }
+
+  .header-list {
+    display: flex;
+    gap: 40px;
+  }
+
+  .header-link {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--logo-studio);
+    transition: color var(--transition-dur-and-timing);
+  }
+
+  .header-link:hover,
+  .header-link:focus {
+    color: var(--header-contact-color);
+  }
+
+  .current-link {
+    position: relative;
+    color: var(--header-contact-color);
+  }
+
+  .current-link::after {
+    content: "";
+    width: 100%;
+    height: 4px;
+    left: 0px;
+    top: 41px;
+    background-color: var(--header-contact-color);
+    border-radius: 2px;
+    position: absolute;
+  }
+
+  /* ----------MAILTO and TEL---------- */
+  .header-address {
+    font-style: normal;
+    display: flex;
+  }
+
+  .header-contact {
+    /* display: flex; */
+    /* gap: 40px; */
+  }
+
+  .mailto-tel {
+    font-family: "Roboto" sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    /* font-size: 16px; */
+    font-size: 12px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--color-body);
+    transition: color var(--transition-dur-and-timing);
+  }
+
+  .mailto-tel:hover,
+  .mailto-tel:focus {
+    color: var(--header-contact-color);
+  }
+
+  /* ----------SECTION HERO---------- */
+  .hero {
+    background-color: var(--logo-studio);
+    background-image: var(--hero-gradient),
+      url(../images/hero/people-office-tab-1x.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    /* padding: 188px 0; */
+    padding: 112px 0;
+    /* max-width: 1440px; */
+    /* height: 600px; */
+    margin: 0 auto;
+  }
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .hero {
+      background-image: var(--hero-gradient),
+        url(../images/hero/people-office-tab-2x.jpg);
+    }
+  }
+
   /* --------SECTION TWO-------- */
   .flex-two {
     display: flex;
@@ -160,6 +287,132 @@
     margin: 0 auto;
   }
 
+  /* --------HEADER-------- */
+  .header-border {
+    border-bottom: 1px solid var(--list-card-set);
+  }
+
+  .header-container {
+    display: flex;
+    align-items: center;
+  }
+
+  .header-navigation {
+    display: flex;
+    margin-right: auto;
+    align-items: center;
+  }
+
+  .header-logo-web {
+    font-family: "Raleway", sans-serif;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--logo-web);
+    padding-top: 24px;
+    padding-bottom: 24px;
+    margin-right: 76px;
+  }
+
+  .header-logo-studio {
+    font-family: "Raleway", sans-serif;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--logo-studio);
+  }
+
+  .header-list {
+    display: flex;
+    gap: 40px;
+  }
+
+  .header-link {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--logo-studio);
+    transition: color var(--transition-dur-and-timing);
+  }
+
+  .header-link:hover,
+  .header-link:focus {
+    color: var(--header-contact-color);
+  }
+
+  .current-link {
+    position: relative;
+    color: var(--header-contact-color);
+  }
+
+  .current-link::after {
+    content: "";
+    width: 100%;
+    height: 4px;
+    left: 0px;
+    top: 41px;
+    background-color: var(--header-contact-color);
+    border-radius: 2px;
+    position: absolute;
+  }
+
+  /* ----------MAILTO and TEL---------- */
+  .header-address {
+    font-style: normal;
+    display: flex;
+  }
+
+  .header-contact {
+    display: flex;
+    gap: 40px;
+  }
+
+  .mailto-tel {
+    font-family: "Roboto" sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--color-body);
+    transition: color var(--transition-dur-and-timing);
+  }
+
+  .mailto-tel:hover,
+  .mailto-tel:focus {
+    color: var(--header-contact-color);
+  }
+
+  /* ----------SECTION HERO---------- */
+  .hero {
+    background-color: var(--logo-studio);
+    background-image: var(--hero-gradient),
+      url(../images/hero/people-office-1x.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    /* padding: 188px 0; */
+    padding: 112px 0;
+    /* max-width: 1440px; */
+    /* height: 600px; */
+    margin: 0 auto;
+  }
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .hero {
+      background-image: var(--hero-gradient),
+        url(../images/hero/people-office-2x.jpg);
+    }
+  }
+
+  /* --------SECTION TWO-------- */
   .section-two-margin {
     padding: 120px 0;
   }
@@ -174,18 +427,47 @@
     flex-basis: calc((100% - 72px) / 4);
   }
 
-  .visually-hidden {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    border: 0;
-    padding: 0;
+  .section-two-icon {
+    height: 112px;
+    border-radius: 4px;
+    background-color: var(--button-footer-text);
+    margin-bottom: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 
-    white-space: nowrap;
-    clip-path: inset(100%);
-    clip: rect(0 0 0 0);
-    overflow: hidden;
+  .clock {
+    width: 264px;
+    height: 112px;
+    border-radius: 4px;
+    background-image: url(../images/section_1/clock.png),
+      url(../images/section_1/rectangle.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-bottom: 8px;
+  }
+
+  .diagram {
+    width: 264px;
+    height: 112px;
+    border-radius: 4px;
+    background-image: url(../images/section_1/diagram.png),
+      url(../images/section_1/rectangle.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-bottom: 8px;
+  }
+
+  .astronaut {
+    width: 264px;
+    height: 112px;
+    border-radius: 4px;
+    background-image: url(../images/section_1/astronaut.png),
+      url(../images/section_1/rectangle.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-bottom: 8px;
   }
 
   .section-two-title {
@@ -205,6 +487,28 @@
     letter-spacing: 0.02em;
   }
 
+  /* --------SECTION THREE-------- */
+  .section-three {
+    padding-bottom: 120px;
+    display: flex;
+  }
+
+  .section-three-title {
+    font-size: 36px;
+    line-height: 1.11;
+    text-align: center;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+    color: var(--logo-studio);
+    margin-bottom: 72px;
+  }
+
+  .flex-three {
+    display: flex;
+    gap: 24px;
+  }
+
+  /* --------SECTION FOUR-------- */
   .flex-four {
     display: flex;
     flex-wrap: wrap;
@@ -219,6 +523,7 @@
     flex-basis: calc((100% - 72px) / 4);
   }
 
+  /* --------SECTION FIVE-------- */
   .section-five-customers {
     padding: 120px 0;
   }
@@ -230,6 +535,7 @@
     justify-content: center;
   }
 
+  /* --------FOOTER-------- */
   .footer-background {
     background-color: var(--logo-studio);
     padding: 100px 0;
