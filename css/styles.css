@@ -125,6 +125,16 @@ body {
   color: var(--logo-studio);
 }
 
+.header-btn-mobile {
+  position: relative;
+  width: 28px;
+  height: 17px;
+  display: block;
+}
+
+.btn-mobile--icon {
+}
+
 .header-list {
   /* display: flex;
   gap: 40px; */
@@ -177,6 +187,7 @@ body {
   max-width: 320px;
   margin: 0 auto;
   margin-bottom: 48px;
+  text-transform: capitalize;
 }
 
 .button-order-service {

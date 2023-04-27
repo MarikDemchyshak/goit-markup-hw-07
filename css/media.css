@@ -52,6 +52,10 @@
     color: var(--logo-studio);
   }
 
+  .header-btn-mobile {
+    display: none;
+  }
+
   .header-list {
     display: flex;
     gap: 40px;
@@ -137,6 +141,10 @@
       background-image: var(--hero-gradient),
         url(../images/hero/people-office-tab-2x.jpg);
     }
+  }
+
+  .hero-title {
+    text-transform: none;
   }
 
   /* --------SECTION TWO-------- */
