@@ -305,12 +305,14 @@
   }
 
   .container-two {
-    width: 100%;
+    width: 1128px;
   }
 
   /* --------HEADER-------- */
   .header-border {
     border-bottom: 1px solid var(--list-card-set);
+    display: flex;
+    justify-content: space-around;
   }
 
   .header-container {
@@ -438,7 +440,9 @@
 
   /* --------SECTION TWO-------- */
   .section-two-margin {
-    padding: 120px 15px;
+    padding: 120px 0;
+    display: flex;
+    justify-content: space-around;
   }
 
   .flex-two {
