@@ -88,6 +88,7 @@ body {
 /* ----------HEADER---------- */
 .header-border {
   border-bottom: 1px solid var(--list-card-set);
+  padding: 0 16px;
 }
 
 .header-container {
@@ -324,7 +325,7 @@ body {
 
 /* ----------SECTION TWO---------- */
 .section-two-margin {
-  padding: 96px 0;
+  padding: 96px 16px;
 }
 
 .flex-two {
@@ -470,9 +471,12 @@ body {
 .section-five-list {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
   row-gap: 72px;
   column-gap: 16px;
+}
+
+.section-five-item {
+  flex-basis: calc((100% - 16px) / 2);
 }
 
 .section-five-link-icon {
