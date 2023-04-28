@@ -396,6 +396,11 @@
     color: var(--header-contact-color);
   }
 
+  .footer-link-icon:focus,
+  .footer-link-icon:hover {
+    background-color: var(--footer-social-color);
+  }
+
   /* ----------SECTION HERO---------- */
   .hero {
     background-color: var(--logo-studio);
@@ -404,10 +409,8 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    /* padding: 188px 0; */
-    padding: 112px 0;
-    /* max-width: 1440px; */
-    /* height: 600px; */
+    padding: 188px 0;
+    height: 600px;
     margin: 0 auto;
   }
 

@@ -32,9 +32,9 @@
           <a class="link header-logo-web" href="./index.html"
             >Web<span class="header-logo-studio">Studio</span></a
           >
-          <button class="header-btn-mobile" type="button">
-            <svg class="btn-mobile--icon" widht="30" height="19">
-              <use href="./images/icons.svg#icon-Vector"></use>
+          <button class="header-btn-mobile" type="submit">
+            <svg class="btn-mobile-icon" width="32" height="24">
+              <use href="./images/icons.svg#icon-menu-mobile"></use>
             </svg>
           </button>
           <ul class="items list header-list">
@@ -51,6 +51,7 @@
             </li>
           </ul>
         </nav>
+
         <!-- MAILTO and TEL -->
         <address class="header-address">
           <ul class="items list header-contact">
@@ -66,6 +67,74 @@
             </li>
           </ul>
         </address>
+      </div>
+      <!-------- MENU MOBILE -------->
+      <div class="header-menu-mobile-wrap visually-hidden">
+        <button class="button-menu-mobile">
+          <svg class="" width="8" height="8">
+            <use href="./images/icons.svg#icon-close"></use>
+          </svg>
+        </button>
+        <nav>
+          <ul class="items list header-list-mobile">
+            <li>
+              <a class="link header-link-mobile" href="./index.html">Studio</a>
+            </li>
+            <li>
+              <a class="link header-link-mobile" href="./portfolio.html"
+                >Portfolio</a
+              >
+            </li>
+            <li>
+              <a class="link header-link-mobile" href="">Contacts</a>
+            </li>
+          </ul>
+        </nav>
+        <!-- MAILTO and TEL -->
+        <address class="header-address-mobile">
+          <ul class="items list header-contact-mobile">
+            <li class="tel-mobile-margin">
+              <a class="link tel-mobile" href="tel:++110001111111"
+                >+11 (000) 111-11-11</a
+              >
+            </li>
+            <li>
+              <a class="link mailto-mobile" href="mailto:info@devstudio.com"
+                >info@devstudio.com</a
+              >
+            </li>
+          </ul>
+        </address>
+        <ul class="items list mobile-social">
+          <li class="mobile-social-items">
+            <a class="link mobile-social-link" href="">
+              <svg class="mobile-social-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-instagram"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="saction-four-social-items">
+            <a class="link saction-four-social-link" href="">
+              <svg class="saction-four-social-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-twitter"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="saction-four-social-items">
+            <a class="link saction-four-social-link" href="">
+              <svg class="saction-four-social-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-facebook"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="saction-four-social-items">
+            <a class="link saction-four-social-link" href="">
+              <svg class="saction-four-social-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-linkedin"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
       </div>
     </header>
     <!------------MAIN STUDIO------------>
@@ -535,7 +604,7 @@
       </div>
     </footer>
     <!------------MODAL WINDOW------------>
-    <!-- <div class="backdrop is-hidden" data-modal>
+    <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button class="button-modal-close" type="button" data-modal-close>
           <svg class="icon-close-btn" widht="8" height="8">
@@ -543,7 +612,6 @@
           </svg>
         </button>
 
-        
         <p class="form-name">Leave your contacts and we will call you back</p>
         <form class="modal-form">
           <label class="modal-form-field">
@@ -615,7 +683,7 @@
           <button type="submit" class="modal-form-submit">Send</button>
         </form>
       </div>
-    </div> -->
+    </div>
     <!--------SCRIPT MODAL-------->
     <script src="./js/mobile-menu.js"></script>
     <script src="./js/modal.js"></script>

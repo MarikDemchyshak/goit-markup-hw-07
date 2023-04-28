@@ -112,7 +112,8 @@ body {
   color: var(--logo-web);
   padding-top: 24px;
   padding-bottom: 24px;
-  margin-right: 76px;
+  /* margin-right: 76px; */
+  margin-right: 250px;
 }
 
 .header-logo-studio {
@@ -126,13 +127,17 @@ body {
 }
 
 .header-btn-mobile {
-  position: relative;
-  width: 28px;
-  height: 17px;
   display: block;
+  border: none;
+  background-color: transparent;
+  margin-left: auto;
+  width: 32px;
+  height: 22px;
 }
 
-.btn-mobile--icon {
+.btn-mobile-icon {
+  width: 32px;
+  height: 22px;
 }
 
 .header-list {
@@ -145,6 +150,118 @@ body {
 .header-address {
   /* font-style: normal; */
   display: none;
+}
+
+/* --------MENU MOBILE-------- */
+.header-menu-mobile-wrap {
+  position: fixed;
+  top: 0;
+  z-index: 2;
+  width: 100vw;
+  height: 100vh;
+  padding: 80px 35px 40px 40px;
+  background-color: #ffffff;
+}
+
+.button-menu-mobile {
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 24px;
+  height: 24px;
+  background: transparent;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  padding: 0;
+  transition: background var(--transition-dur-and-timing);
+}
+
+.button-menu-mobile:hover,
+.button-menu-mobile:focus {
+  background: var(--header-contact-color);
+  border-radius: 50%;
+}
+
+.icon-close-btn {
+  transition: fill var(--transition-dur-and-timing);
+}
+
+.header-list-mobile {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.header-link-mobile {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: var(--logo-studio);
+  transition: color var(--transition-dur-and-timing);
+}
+
+.header-link-mobile:hover,
+.header-link-mobile:focus {
+  color: var(--header-contact-color);
+}
+
+.header-address-mobile {
+  margin-top: 284px;
+  margin-bottom: 48px;
+}
+
+.header-contact-mobile {
+}
+
+.tel-mobile {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--logo-web);
+}
+
+.mailto-mobile {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: var(--color-body);
+}
+
+.tel-mobile-margin {
+  margin-bottom: 40px;
+}
+
+.mobile-social {
+  display: flex;
+  gap: 56px;
+}
+
+.mobile-social-items {
+  width: 40px;
+  height: 40px;
+}
+
+.mobile-social-link {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-color: var(--logo-web);
+  align-items: center;
+  justify-content: center;
+  transition: background-color var(--transition-dur-and-timing);
+}
+
+.mobile-social-icon {
+  fill: var(--button-footer-text);
 }
 
 /* ----------SECTION HERO---------- */
