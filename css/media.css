@@ -119,6 +119,14 @@
     color: var(--header-contact-color);
   }
 
+  .mob-menu {
+    display: none;
+  }
+
+  .menu-close-btn {
+    display: none;
+  }
+
   /* ----------SECTION HERO---------- */
   .hero {
     background-color: var(--logo-studio);

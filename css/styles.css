@@ -125,7 +125,7 @@ body {
   color: var(--logo-studio);
 }
 
-.header-btn-mobile {
+.menu-close-btn {
   display: flex;
   border: none;
   background-color: transparent;
@@ -151,7 +151,7 @@ body {
 }
 
 /* --------MENU MOBILE-------- */
-.header-menu-mobile-wrap {
+.mob-menu {
   position: fixed;
   top: 0;
   z-index: 2;
@@ -164,7 +164,7 @@ body {
   justify-content: space-between;
 }
 
-.button-menu-mobile {
+.menu-close-btn {
   position: absolute;
   top: 24px;
   right: 24px;
