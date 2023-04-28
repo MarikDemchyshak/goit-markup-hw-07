@@ -97,11 +97,6 @@
     display: flex;
   }
 
-  .header-contact {
-    /* display: flex; */
-    /* gap: 40px; */
-  }
-
   .mailto-tel {
     font-family: "Roboto" sans-serif;
     font-style: normal;

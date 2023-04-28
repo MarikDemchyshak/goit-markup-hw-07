@@ -79,7 +79,6 @@ body {
 }
 
 .container {
-  /* width: 1158px; */
   width: 100%;
   padding-left: 16px;
   padding-right: 16px;
@@ -112,7 +111,6 @@ body {
   color: var(--logo-web);
   padding-top: 24px;
   padding-bottom: 24px;
-  /* margin-right: 76px; */
   margin-right: 250px;
 }
 
@@ -127,28 +125,27 @@ body {
 }
 
 .header-btn-mobile {
-  display: block;
+  display: flex;
   border: none;
   background-color: transparent;
   margin-left: auto;
   width: 32px;
   height: 22px;
+  justify-content: center;
+  align-items: center;
+  position: relative;
 }
 
 .btn-mobile-icon {
-  width: 32px;
-  height: 22px;
+  position: absolute;
 }
 
 .header-list {
-  /* display: flex;
-  gap: 40px; */
   display: none;
 }
 
 /* ----------MAILTO and TEL---------- */
 .header-address {
-  /* font-style: normal; */
   display: none;
 }
 
@@ -161,6 +158,9 @@ body {
   height: 100vh;
   padding: 80px 35px 40px 40px;
   background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .button-menu-mobile {
@@ -210,11 +210,7 @@ body {
 }
 
 .header-address-mobile {
-  margin-top: 284px;
   margin-bottom: 48px;
-}
-
-.header-contact-mobile {
 }
 
 .tel-mobile {
@@ -272,10 +268,7 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  /* padding: 188px 0; */
   padding: 112px 0;
-  /* max-width: 1440px; */
-  /* height: 600px; */
   margin: 0 auto;
 }
 
@@ -293,14 +286,11 @@ body {
 }
 
 .hero-title {
-  /* font-size: 56px; */
   font-size: 36px;
-  /* line-height: 1.07; */
   line-height: 1.2;
   text-align: center;
   letter-spacing: 0.02em;
   color: var(--brand-color-btn-1);
-  /* max-width: 496px; */
   max-width: 320px;
   margin: 0 auto;
   margin-bottom: 48px;
@@ -334,19 +324,13 @@ body {
 
 /* ----------SECTION TWO---------- */
 .section-two-margin {
-  /* padding: 120px 0; */
   padding: 96px 0;
 }
 
 .flex-two {
   display: flex;
   flex-wrap: wrap;
-  /* gap: 24px; */
   gap: 72px;
-}
-
-.section-two-list {
-  /* flex-basis: calc((100% - 72px) / 4); */
 }
 
 .section-two-icon {
@@ -354,9 +338,7 @@ body {
 }
 
 .section-two-title {
-  /* font-weight: 500; */
   font-weight: 700;
-  /* font-size: 20px; */
   font-size: 36px;
   line-height: 1.2;
   letter-spacing: 0.02em;
@@ -367,7 +349,6 @@ body {
 }
 
 .section-two-text {
-  /* font-weight: 400; */
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
@@ -407,7 +388,6 @@ body {
 .flex-four {
   display: flex;
   flex-wrap: wrap;
-  /* gap: 24px; */
   gap: 72px;
   justify-content: center;
 }
@@ -417,7 +397,6 @@ body {
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
   border-radius: 0px 0px 4px 4px;
-  /* flex-basis: calc((100% - 72px) / 4); */
 }
 
 .saction-four-name-profession {
@@ -474,7 +453,6 @@ body {
 
 /* ----------SECTION FIVE---------- */
 .section-five-customers {
-  /* padding: 120px 0; */
   padding: 96px 0;
 }
 
@@ -492,18 +470,12 @@ body {
 .section-five-list {
   display: flex;
   flex-wrap: wrap;
-  /* gap: 24px; */
   justify-content: center;
   row-gap: 72px;
   column-gap: 16px;
 }
 
-.section-five-item {
-  /* flex-basis: calc((100% - 16px) / 2); */
-}
-
 .section-five-link-icon {
-  /* width: 168px; */
   width: 190px;
   height: 88px;
   border: 1px solid currentColor;
@@ -636,7 +608,6 @@ body {
 /* ----------FOOTER---------- */
 .footer-background {
   background-color: var(--logo-studio);
-  /* padding: 100px 0; */
   padding: 96px 0;
 }
 
@@ -645,10 +616,6 @@ body {
   flex-wrap: wrap;
   gap: 72px;
   justify-content: center;
-}
-
-.footer-logo-text {
-  /* margin-right: 120px; */
 }
 
 .footer-logo-web {
@@ -675,13 +642,9 @@ body {
 
 .footer-text {
   color: var(--button-footer-text);
-  /* max-width: 264px; */
   max-width: 268px;
   line-height: 1.5em;
   margin-top: 16px;
-}
-
-.footer-social-icon {
 }
 
 .footer-title-social-media {
@@ -723,10 +686,6 @@ body {
 }
 
 /* --------FORM FOOTER-------- */
-.container-form-footer {
-  /* margin-left: 80px; */
-}
-
 .form-text {
   font-weight: 500;
   font-size: 16px;
@@ -742,13 +701,11 @@ body {
 .form-label-btn {
   display: flex;
   flex-wrap: wrap;
-  /* gap: 24px; */
   gap: 16px;
   justify-content: center;
 }
 
 .footer-input {
-  /* width: 264px; */
   width: 398px;
   height: 40px;
   background-color: transparent;

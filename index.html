@@ -32,9 +32,9 @@
           <a class="link header-logo-web" href="./index.html"
             >Web<span class="header-logo-studio">Studio</span></a
           >
-          <button class="header-btn-mobile" type="submit">
-            <svg class="btn-mobile-icon" width="32" height="24">
-              <use href="./images/icons.svg#icon-menu-mobile"></use>
+          <button js-open-menu class="header-btn-mobile" type="submit">
+            <svg class="btn-mobile-icon" width="32" height="22">
+              <use href="./images/icons.svg#icon-burger"></use>
             </svg>
           </button>
           <ul class="items list header-list">
@@ -69,30 +69,36 @@
         </address>
       </div>
       <!-------- MENU MOBILE -------->
-      <div class="header-menu-mobile-wrap visually-hidden">
-        <button class="button-menu-mobile">
-          <svg class="" width="8" height="8">
-            <use href="./images/icons.svg#icon-close"></use>
-          </svg>
-        </button>
-        <nav>
-          <ul class="items list header-list-mobile">
-            <li>
-              <a class="link header-link-mobile" href="./index.html">Studio</a>
-            </li>
-            <li>
-              <a class="link header-link-mobile" href="./portfolio.html"
-                >Portfolio</a
-              >
-            </li>
-            <li>
-              <a class="link header-link-mobile" href="">Contacts</a>
-            </li>
-          </ul>
-        </nav>
+      <div js-menu-container class="header-menu-mobile-wrap visually-hidden">
+        <div>
+          <button js-close-menu class="button-menu-mobile">
+            <svg class="" width="8" height="8">
+              <use href="./images/icons.svg#icon-close"></use>
+            </svg>
+          </button>
+          <nav>
+            <ul class="items list header-list-mobile">
+              <li>
+                <a class="link header-link-mobile" href="./index.html"
+                  >Studio</a
+                >
+              </li>
+              <li>
+                <a class="link header-link-mobile" href="./portfolio.html"
+                  >Portfolio</a
+                >
+              </li>
+              <li>
+                <a class="link header-link-mobile" href="">Contacts</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+
         <!-- MAILTO and TEL -->
-        <address class="header-address-mobile">
-          <ul class="items list header-contact-mobile">
+        <div>
+          <address class="header-address-mobile">
+           <ul class="items list header-contact-mobile">
             <li class="tel-mobile-margin">
               <a class="link tel-mobile" href="tel:++110001111111"
                 >+11 (000) 111-11-11</a
@@ -103,9 +109,9 @@
                 >info@devstudio.com</a
               >
             </li>
-          </ul>
-        </address>
-        <ul class="items list mobile-social">
+           </ul>
+          </address>
+         <ul class="items list mobile-social">
           <li class="mobile-social-items">
             <a class="link mobile-social-link" href="">
               <svg class="mobile-social-icon" width="24" height="24">
@@ -134,9 +140,11 @@
               </svg>
             </a>
           </li>
-        </ul>
-      </div>
+         </ul>
+        </div>
     </header>
+        </div>
+       
     <!------------MAIN STUDIO------------>
     <main>
       <!------------SECTION HERO------------>
@@ -684,8 +692,8 @@
         </form>
       </div>
     </div>
-    <!--------SCRIPT MODAL-------->
-    <script src="./js/mobile-menu.js"></script>
-    <script src="./js/modal.js"></script>
+    <!--------SCRIPT-------->
+    <script defer src="./js/modal.js"></script>
+    <script defer src="./js/mobile-menu.js"></script>
   </body>
 </html>
