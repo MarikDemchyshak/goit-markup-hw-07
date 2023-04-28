@@ -158,7 +158,7 @@ body {
   width: 100vw;
   height: 100vh;
   padding: 80px 35px 40px 40px;
-  background-color: #ffffff;
+  background-color: var(--brand-color-btn-1);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -178,6 +178,7 @@ body {
   border-radius: 50%;
   padding: 0;
   transition: background var(--transition-dur-and-timing);
+  border: none;
 }
 
 .button-menu-mobile:hover,
@@ -372,7 +373,6 @@ body {
 /* ----------SECTION FOUR---------- */
 .section-four-background {
   background-color: var(--button-footer-text);
-  /* padding: 120px 0; */
   padding: 96px 0;
 }
 
