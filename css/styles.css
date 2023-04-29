@@ -209,6 +209,10 @@ body {
   color: var(--header-contact-color);
 }
 
+.current-link {
+  color: var(--header-contact-color);
+}
+
 .header-address-mobile {
   margin-bottom: 48px;
 }
